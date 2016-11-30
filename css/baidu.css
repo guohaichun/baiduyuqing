@@ -1,0 +1,905 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: "Microsoft Yahei";
+    overflow: hidden;
+}
+a{
+    list-style:none;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,li{
+    margin:0;
+    padding: 0;
+    list-style: none;
+
+}
+#fullpage{
+    width:100%;
+    height:100%;
+    transition:margin-top 1s ease;
+}
+#fullpage section{
+    width:100%;
+    height:100%;
+}
+#fullpage section:nth-child(1){
+;
+    background:url(../img/bg-0_c25cb21.jpg);
+}
+#fullpage section:nth-child(2){
+
+    background:url(../img/bg-1_e29bcfa.jpg);
+}
+#fullpage section:nth-child(3){
+
+    background:url(../img/bg-2_867b7b4.jpg);
+}
+#fullpage section:nth-child(4){
+
+    background:url(../img/bg-3_153a003.jpg);
+}
+header{
+    width:100%;
+    height:60px;
+    background: #168bd8;
+    position:fixed;
+    z-index:999;
+}
+.header{
+    width:700px;
+    height:60px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:inherit;
+    justify-content:space-between;
+    align-items: center;
+}
+.header .meau{
+     position: absolute;
+    top:30%;
+    right:5%;
+}
+.header .meau div{
+    width:20px;
+    height:1px;
+    background:#fff;
+    margin-top:33.3333%;
+}
+.ul{
+    width:100%;
+    height:auto;
+    background:#0e90d2;
+    float: right;
+    animation-name:name;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-direction:alternate;
+}
+@keyframes name{
+    0%{
+        width:0;
+
+    }
+    100%{
+        width:100%;
+    }
+}
+.ul li{
+    width:100%;
+    height:auto;
+    background:#0e90d2;
+    padding:10px;
+
+}
+.ul li a{
+    color:#fff;
+}
+.header .head{
+    align-self: center;
+    margin-top: 20px;
+    font-size: 15px;
+    color:#fff;
+}
+.header .last{
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color:#fff;
+}
+.header .logo{
+    width:120px;
+    height:40px;
+    background:url(../img/baidu.png) no-repeat;
+}
+.header a:nth-of-type(2){
+    margin-left: 30px;
+    color: #67cbff;
+}
+.header a:nth-of-type(5){
+    margin-left: 100px;
+}
+.header a:nth-of-type(8){
+}
+#fullpage .one{
+    position: relative;
+}
+.yuqing{
+    width: 501px;
+    height: 158px;
+    background: url(../img/launch_deea86c.png) no-repeat;
+    position:absolute;
+    left:5%;
+    top:110px;
+    z-index:2;
+}
+.feiji{
+    width:119px;
+    height:79px;
+    background:url(../img/flight_ade8ee2.png) no-repeat;
+    position:absolute;
+    left:480px;
+    top:80px;
+    animation-name:feiji;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes feiji{
+    0%{
+        transform:translate(0,0);
+
+    }
+    100%{
+        transform:translate(0,15px);
+    }
+}
+.chuan{
+    width: 242px;
+    height: 228px;
+    background: url(../img/ship_1ad6734.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    top:321px;
+    left:310px;
+    z-index:10;
+}
+.login_box {
+    width: 340px;
+    height: 300px;
+    border-radius: 5px;
+    background: #4ebffc;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:12%;
+    margin:auto;
+    z-index:20;
+}
+.login_box input{
+    border:0;
+    outline: none;
+    font-size:15px;
+}
+.login_inif{
+    width:299px;
+    height:40px;
+    background:#fff;
+    margin-top:30px;
+    margin-left:20.5px;
+}
+.password {
+    width: 299px;
+    height: 40px;
+    background: #fff;
+    margin-left: 20.5px;
+    margin-top: 20px;
+}
+.yzm {
+    width: 299px;
+    height: 40px;
+    margin-left: 20.5px;
+    margin-top: 20px;
+}
+.login_inif span{
+    width:14px;
+    height:14px;
+    float: left;
+    margin-left:13px;
+    margin-top:13px;
+    background-image:url(../img/icons.png);
+    background-repeat: no-repeat;
+    background-position:-124px -13px;
+    z-index:3;
+
+}
+.login_inif input{
+    width:260px;
+    height:36px;
+    float: left;
+    margin-left:12px;
+
+}
+.password span{
+    width:14px;
+    height:14px;
+    float: left;
+    margin-left:13px;
+    margin-top:13px;
+    background-image:url(../img/icons.png);
+    background-repeat: no-repeat;
+    background-position:-140px -13px;
+    z-index:3;
+
+}
+.password input{
+    width:260px;
+    height:36px;
+    float: left;
+    margin-left:12px;
+
+}
+.yzm input{
+    width:128px;
+    height:36px;
+    margin-left:12px;
+}
+.yzm_box{
+    width:140px;
+    height:38px;
+    float: left;
+    background: #fff;
+}
+.yzm .yzm_img{
+    width:99px;
+    height:39px;
+    float: left;
+    background:#0e90d2;
+    margin-left:10px;
+}
+.yzm a{
+    color:#fff;
+    float: left;
+    font-size: 12px;
+    margin-left:10px;
+    margin-top:10px;
+}
+.submit{
+    width: 299px;
+    height:35px;
+    border: 0;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    float: left;
+    margin-left:20.5px;
+    margin-top:30px;
+}
+.other{
+    width:300px;
+    height:19px;
+    float: left;
+    margin-left:20.5px;
+    margin-top:10px;
+    line-height: 19px;
+
+}
+.other span{
+    width:15px;
+    height:17px;
+    display: block;
+    float: left;
+    background-image:url(../img/icons.png);
+    background-repeat: no-repeat;
+    background-position:-204px -74px;
+    margin-top:2px;
+    margin-right:4px;
+}
+.other a{
+    color:#fff;
+    font-size: 12px;
+}
+.other .anquan{
+    width:auto;
+    height:auto;
+    display: block;
+    float: left;
+}
+.other .wangji{
+    width:auto;
+    height:auto;
+    display: block;
+    float: right;
+}
+.follow_head{
+    width: 100%;
+    height: 126px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0d71cd url(../img/bg-1_e29bcfa.jpg);
+}
+.obj_hillone{
+    width: 265px;
+    height: 175px;
+    background: url(../img/hill_1_0d79217.png);
+    position: absolute;
+    top: -50px;
+}
+.obj_hilltwo{
+    width: 63px;
+    height: 78px;
+    background: url(../img/hill_2_540422f.png);
+    position: absolute;
+    right: 458px;
+    top: -13px
+}
+.obj_hillthree{
+    width: 260px;
+    height: 175px;
+    background: url(../img/hill_3_ace39fb.png);
+    position:absolute;
+    right:47px;
+    top: -47px
+}
+.jt{
+    width: 100%;
+    height:130px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+}
+.jt a{
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/arrow_aad9b25.png);
+    position: absolute;
+    left:48%;
+    top:35%;
+    animation-name:jta;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes jta{
+    0%{
+        transform:translate(0,0);
+        opacity:0.5;
+
+    }
+    100%{
+        transform:translate(0,10px);
+        opacity:1;
+    }
+}
+.clouds{
+    width:200%;
+    height:100%;
+    overflow: hidden;
+}
+.cloud_box{
+    width:100%;
+    height:100%;
+    float: left;
+}
+@keyframes clouds{
+    0%{
+        transform:translate(0,0);
+
+    }
+    100%{
+        transform:translate(-1351px,0);
+    }
+}
+.cloud_one{
+    width:50%;
+    height:100%;
+    float: left;
+    animation:clouds 10s linear infinite;
+    background:url(../img/cloud_1_1d4924b.png) no-repeat;
+    background-size: cover;
+}
+.cloud_two{
+    width:50%;
+    height:100%;
+    float: left;
+    animation:clouds 10s linear infinite;
+    background:url(../img/cloud_1_1d4924b.png) no-repeat;
+    background-size: cover;
+}
+.two{
+    position: relative;
+}
+.two_title{
+    position:absolute;
+    top:240px;
+    left:198px;
+}
+.two_left{
+    width:66px;
+    height:126px;
+    float: left;
+    background:url(../img/h_lingxian_221f2d8.png) no-repeat;
+    animation-name:two_left;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+}
+.two_right{
+    float: right;
+}
+@keyframes two_left{
+    0%{
+        transform:rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+.two_right h4{
+    font-size: 34px;
+    font-weight: 400;
+    margin:0;
+    margin-left:30px;
+    letter-spacing: 2px;
+    color:#fff;
+}
+.two_right p{
+    color:#fff;
+    opacity: 0.8;
+    font-size:19px;
+    margin-left:30px;
+}
+.two .obj_brain{
+    width:444px;
+    height:427px;
+    position: absolute;
+    right:15%;
+    margin-top:10%;
+    background:url(../img/brain_36a156f.png)no-repeat;
+}
+
+.center_box{
+    width:100%;
+    height:88px;
+    position:absolute;
+    bottom:0;
+    z-index:10;
+}
+
+.center_box .square1{
+    width: 44px;
+    height: 44px;
+    position:absolute;
+    background: #35b568;
+    left: 258px;
+     top:44px;
+
+}
+ .two .square2{
+    width: 88px;
+    height: 88px;
+    position:absolute;
+    background: #4ac179;
+    left: 342px;
+}
+.two  .square3{
+    width: 44px;
+    height: 44px;
+    position:absolute;
+    background: #8ae75a;
+    left: 430px;
+     top:44px;
+}
+.two  .square4 {
+    width: 44px;
+    height: 44px;
+    position:absolute;
+    background: #8ae75a;
+    right: 512px;
+    top:44px;
+}
+.two  .square5{
+    width: 44px;
+    height: 44px;
+    position:absolute;
+    background: #4ac179;
+    right: 420px;
+     top:44px;
+
+}
+.jt{
+    width: 100%;
+    height:130px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+}
+.two .jt a{
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/arrow_aad9b25.png);
+    position: absolute;
+    left:48%;
+    top:20%;
+    animation-name:jtaw;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes jtaw{
+    0%{
+        transform:translate(0,0);
+        opacity:0.5;
+
+    }
+    100%{
+        transform:translate(0,10px);
+        opacity:1;
+    }
+}
+.three{
+    position: relative;
+}
+.three_title{
+    position:absolute;
+    top:205px;
+    left:210px;
+    z-index:30;
+}
+.three_left{
+    width:66px;
+    height:126px;
+    float: left;
+    background:url(../img/h_quanmian_8f813d2.png) no-repeat;
+    animation-name:three_left;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+
+}
+.three_right{
+    float: right;
+}
+@keyframes three_left{
+    0%{
+        transform:rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+.three_right h4{
+    font-size: 34px;
+    font-weight: 400;
+    margin:0;
+    margin-left:30px;
+    letter-spacing: 2px;
+    color:#fff;
+}
+.three_right p{
+    color:#fff;
+    opacity: 0.8;
+    font-size:19px;
+    margin-left:30px;
+}
+.three .obj_brain{
+    width:444px;
+    height:427px;
+    position: absolute;
+    right:17%;
+    margin-top:14%;
+    background:url(../img/allside_e8abd12.png)no-repeat;
+}
+.three .center_box{
+    width:100%;
+    height:88px;
+    position:absolute;
+    top:0;
+    z-index:10;
+}
+
+.three .square1{
+    width:88px;
+    height:88px;
+    position:absolute;
+    background: #33bb9a;
+    left: 250px;
+    top: 60px;
+}
+.three .square2{
+    width:88px;
+    height:88px;
+    position:absolute;
+    background: #29a2b8;
+    left:162px;
+    top: 148px;
+}
+.three .square3{
+    width:88px;
+    height:88px;
+    position:absolute;
+    background: #60cf6e;
+    left: 338px;
+    top: 148px;
+}
+.three .square4 {
+    width: 176px;
+    height: 176px;
+    position:absolute;
+    background: #8ae75a;
+    left: 249px;
+    top: 236px;
+    background:url(../img/square_c776382.jpg) no-repeat;
+}
+.three .square5{
+    width:88px;
+    height:88px;
+    position:absolute;
+    background: #33bb9a;
+    left: 425px;
+    top: 236px;
+}
+.three_bottom{
+    width:100%;
+    height:138px;
+    position: absolute;
+    bottom:0;
+    background:url(../img/bg-3-head_b8a3f7f.png)no-repeat;
+}
+.jt{
+    width: 100%;
+    height:130px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+}
+.three .jt a{
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/arrow_aad9b25.png);
+    position: absolute;
+    left:48%;
+    top:48%;
+    animation-name:jtas;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes jtas{
+    0%{
+        transform:translate(0,0);
+        opacity:0.5;
+
+    }
+    100%{
+        transform:translate(0,10px);
+        opacity:1;
+    }
+}
+.four{
+    position: relative;
+}
+.four_title{
+    position:absolute;
+    top:175px;
+    left:260px;
+    z-index:30;
+}
+.four_left{
+    width:66px;
+    height:126px;
+    float: left;
+    background:url(../img/h_zhuanye_256a94d.png) no-repeat;
+    animation-name:four_left;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+
+}
+.four_right{
+    float: right;
+}
+@keyframes four_left{
+    0%{
+        transform:rotateY(0deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+.four_right h4{
+    font-size: 34px;
+    font-weight: 400;
+    margin:0;
+    margin-left:30px;
+    letter-spacing: 2px;
+    color:#fff;
+}
+.four_right p{
+    color:#fff;
+    opacity: 0.8;
+    font-size:19px;
+    margin-left:30px;
+}
+.four .obj_brain{
+    width:604px;
+    height:369px;
+    position: absolute;
+    right:17%;
+    margin-top:10%;
+    background:url(../img/stat_8934528.png)no-repeat;
+}
+.four .center_box{
+    width:100%;
+    height:88px;
+    position:absolute;
+    top:0;
+    z-index:10;
+}
+
+.four_bottom{
+    width:100%;
+    height:138px;
+    position: absolute;
+    bottom:0;
+    background:url(../img/bg-3-head_b8a3f7f.png)no-repeat;
+}
+.four .square1{
+    width: 275px;
+    height: 245px;
+    left: 17%;
+    top:120px;
+    background:url(../img/bubble_3b0f897.png) no-repeat;
+}
+.jt{
+    width: 100%;
+    height:130px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+}
+.four .jt a{
+    display: block;
+    width: 30px;
+    height: 26px;
+    background: url(../img/arrow_aad9b25.png);
+    position: absolute;
+    left:48%;
+    top:48%;
+    animation-name:jtaf;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes jtaf{
+    0%{
+        transform:translate(0,0);
+        opacity:0.5;
+
+    }
+    100%{
+        transform:translate(0,10px);
+        opacity:1;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .header {
+        width: 1000px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: inherit;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ul {
+        width: 100%;
+        height: auto;
+        background: #0e90d2;
+        display: none;
+    }
+
+    .yuqing {
+        width: 501px;
+        height: 158px;
+        background: url(../img/launch_deea86c.png) no-repeat;
+        position: absolute;
+        left: 190px;
+        top: 110px;
+        z-index: 2;
+    }
+
+    .feiji {
+        width: 119px;
+        height: 79px;
+        background: url(../img/flight_ade8ee2.png) no-repeat;
+        position: absolute;
+        left: 480px;
+        top: 80px;
+        animation-name: feiji;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes feiji {
+        0% {
+            transform: translate(0, 0);
+
+        }
+        100% {
+            transform: translate(0, 15px);
+        }
+    }
+    .chuan {
+        width: 242px;
+        height: 228px;
+        background: url(../img/ship_1ad6734.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 321px;
+        left: 310px;
+        z-index: 10;
+    }
+
+    .login_box {
+        width: 340px;
+        height: 300px;
+        border-radius: 5px;
+        background: #4ebffc;
+        position: absolute;
+        right: -50%;
+        top: -14%;
+    }
+
+    .jt {
+        width: 100%;
+        height: 130px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 0;
+    }
+
+    .four .jt a {
+        display: block;
+        width: 30px;
+        height: 26px;
+        background: url(../img/arrow_aad9b25.png);
+        position: absolute;
+        left: 48%;
+        top: 35%;
+    }
+
+    .copyright {
+        width:100%;
+        height:80px;
+        position:absolute;
+        bottom:-30px;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 12px;
+    }
+    .copyright a{
+        color:#fff;
+    }
+}
+
+
+
